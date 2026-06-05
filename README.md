@@ -13,6 +13,7 @@ Uses lib.addKeybind (same method as ox_inventory)
 
 Installation:
 1) Add required code to main.lua, main.lua should be here: ox_target/client/main.lua
+BE CAREFUL THERE IS A GAP IN THE END MAKE SURE TO COPY AND PASTE THE WHOLE THING!
 
 -- Function to handle target option selection
 local function selectTargetOption(keyNumber)
@@ -141,7 +142,6 @@ local function selectTargetOption(keyNumber)
         LocalPlayer.state.invHotkeys = true
     end
 end
-
 -- Add keybinds for target option selection (1-9)
 for i = 1, 9 do
     lib.addKeybind({
@@ -153,3 +153,4 @@ for i = 1, 9 do
         end
     })
 end
+
